@@ -1,0 +1,588 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+width: 100%;
+height: 100vh;
+background-color:#adadab ;
+}
+.logo{
+    position: absolute;
+    left: 90px;
+    top:50px;
+}
+.logo p{
+    text-shadow: 2px 2px 30px rgba(0,0 ,0, 0.2);
+    font-weight: bold;
+    color: #2f2e41;
+    font-size: 2rem;
+    letter-spacing:1 ;
+}
+.logo p span{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.section1{
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-15%,-50%);
+}
+
+.section1 img{
+    height: 320px;
+}
+
+.section1Text{
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-90%,-50%);
+}
+.section1Text img{
+    height: 250px;
+}
+
+.icon{
+    position: fixed;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 30px rgba(0,0 ,0, 0.2);
+    padding: 5px 0px;
+    z-index: 1;
+}
+
+.icon a{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px 15px;
+text-decoration: none;
+}
+
+.icon a i{
+    color: rgba(39,39 ,39, 0.80);
+}
+
+.icon a:hover .fa-youtube{
+color: red;
+}
+
+.icon a:hover .fa-facebook{
+    color: rgb(65, 85, 201);
+}
+
+.icon a:hover .fa-instagram{
+    color: rgb(212, 30, 115);
+}
+
+
+.icon a:hover .fa-tiktok{
+    color: rgb(0, 0, 0);
+}
+
+.notification{
+    width: 100%;
+    height: 250px;
+    margin-bottom:30px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(0,0 ,0, 0.3);
+    background-color: white;
+}
+
+.notification h3{
+    font-size: 2rem;
+    color: rgb(56, 56, 56);
+}
+
+.notificationInput{
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 7%  7%  7%  7% / 50% 50% 50% 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px ;
+    box-shadow: 2px 5px 30px rgba(0,0 ,0, 0.1);
+    margin-top: 30px;
+}
+
+.notificationInput i{
+    padding: 0px 15px;
+    font-size: 30px;
+}
+
+.notificationInput p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: black;
+    padding: 20px;
+
+}
+
+footer p{
+    text-align: center;
+    color: white;
+}
+footer p a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media (min-width:320px) and (max-width:400px){
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+    .logo p{
+        font-size: 1rem;
+    }
+    .logo p span{
+        font-size: 10px;
+    }
+    
+    .icon{
+        left: 40px;
+    }
+    .icon p{
+        font-size: 1rem;
+    }
+    .icon a{
+        padding: 14px 10px;
+    }
+    .section1{
+        left: 26%;
+        top:29% ;
+        transform: translate(-24%,-35%);
+    }
+    .section1 img {
+        height: 130px;
+    }
+    .section1Text img {
+        height: 100px;
+    }
+    .section1Text{
+        top: 60%;
+        left: 90%;
+    }
+    .icon{
+        left: 3px;
+
+    }
+    .notification{
+        height: 240px;
+        width: 100%;
+    }
+    .notification h3 {
+        font-size: 1rem;
+    }
+    .notificationInput {
+        width: 170px;
+        height: 35px;
+    }
+
+    .notificationInput i{
+        font-size: 17px;
+    }
+    .notificationInput p{
+        font-size: 13px;
+    }
+    footer{
+        width: 100%;
+    }
+    footer p{
+        font-size: 12px;
+    }
+}
+
+@media (min-width:401px) and (max-width:550px){
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+    .logo p{
+        font-size: 1rem;
+    }
+    .logo p span{
+        font-size: 10px;
+    }
+    .icon{
+        left: 5px;
+    }
+    .icon p{
+        font-size: 1.5rem;
+        padding: 13px 11px;
+    }
+    .section1{
+        left: 47%;
+        top:30% ;
+        transform: translate(-24%,-35%);
+    }
+    .section1 img {
+        height: 150px;
+    }
+    .section1Text img {
+        height: 110px;
+    }
+    .section1Text{
+        top: 60%;
+        left: 88%;
+    }
+    
+    .notification{
+        height: 240px;
+        width: 100%;
+    }
+    .notification h3 {
+        font-size: 1.2rem;
+    }
+    .notificationInput {
+        width: 230px;
+    }
+
+    .notificationInput i{
+        font-size: 17px;
+    }
+    .notificationInput p{
+        font-size: 13px;
+    }
+    footer{
+        width: 100%;
+    }
+    footer p{
+        font-size: 12px;
+    }
+}
+
+@media (min-width:551px) and (max-width:768px){
+    .section1Text{
+        top: 70%;
+        left: 90%;
+    }
+    .section1Text img{
+     height: 155px;
+    }
+    .section1{
+        top: 35%;
+        left: 22%;
+    }
+    .section1 img{
+        height: 200px;
+    }
+    .notification h3 {
+        font-size: 1.2rem;
+    }
+    .notificationInput {
+        width: 250px;
+    }
+}
+
+@media (min-width:769px) and (max-width:880px){
+    .section1Text {
+        top: 73%;
+        left: 75%;
+    }
+    .section1Text  img{
+        height: 200px;
+    }
+    .section1{
+        top: 35%;
+    }
+    .section1 img{
+        height: 200px;
+    }
+    .notification{
+        width: 100%;
+    }
+    .notification h3 {
+        font-size: 1.4rem;
+    }
+    .notificationInput {
+        width: 290px;
+    }
+   
+}
+
+@media (min-width:881px) and (max-width:900px){
+    .section1Text {
+        top: 73%;
+        left: 75%;
+    }
+    .section1Text  img{
+        height: 200px;
+    }
+    .section1{
+        top: 35%;
+    }
+    .section1 img{
+        height: 220px;
+    }
+    .notification{
+        width: 100%;
+    }
+    
+}
+
+@media (min-width:901px) and (max-width:1024px){
+    .section1{
+        left: 11%;
+    }
+    .section1 img{
+        height: 210px;
+    }
+    .section1Text{
+        left:90% ;
+    }
+    .section1Text img {
+        height: 220px;
+    }
+}
+
+
+
+
+@media (min-width:1025px) and (max-width:1240px){
+    .section1{
+        left: 15%;
+    }
+    .section1 img{
+        height: 180px;
+    }
+    .section1Text{
+        left:92% ;
+    }
+    .section1Text img {
+        height: 230px;
+    }
+    .logo{
+        top: 60px;
+    }
+    .logo p {
+        font-size: 2.3rem;
+    }
+    .icon {
+        padding: 12px 6px ;
+        left: 5%;
+    }
+
+    .notification h3 {
+        font-size: 1.5rem;
+    }
+    .notificationInput {
+        width: 350px;
+    }
+    .notificationInput p{
+        font-size: 18px;
+    }
+
+    footer{
+        padding: 25px;
+    }
+    footer p{
+        font-size: 15px;
+    }
+}
+
+@media (min-width:1240px) and (max-width:1440px){
+    .section1{
+        left: 15%;
+    }
+    .section1 img{
+        height: 220px;
+    }
+    .section1Text{
+        left:85% ;
+    }
+    .section1Text img {
+        height: 260px;
+    }
+    .logo{
+        top: 60px;
+        left: 10%;
+    }
+    .logo p {
+        font-size: 2.4rem;
+    }
+    .icon {
+        padding: 12px 6px ;
+        left: 5%;
+    }
+
+    .notification h3 {
+        font-size: 1.6rem;
+    }
+    .notificationInput {
+        width: 400px;
+    }
+    .notificationInput p{
+        font-size: 20px;
+    }
+
+    footer{
+        padding: 25px;
+    }
+    footer p{
+        font-size: 15px;
+    }
+}
+
+
+
+@media (min-width:1440px) and (max-width:1840px){
+    .section1{
+        left: 15%;
+    }
+    .section1 img{
+        height: 240px;
+    }
+    .section1Text{
+        left:85% ;
+    }
+    .section1Text img {
+        height: 260px;
+    }
+    .logo{
+        top: 60px;
+        left: 10%;
+    }
+    .logo p {
+        font-size: 2.4rem;
+    }
+    .icon {
+        padding: 15px 9px ;
+        left: 5%;
+    }
+    .icon a{
+        font-size: 20px;
+    }
+
+    .notification h3 {
+        font-size: 2.3rem;
+    }
+    .notificationInput {
+        width: 400px;
+    }
+    .notificationInput p{
+        font-size: 30px;
+    }
+
+    footer{
+        padding: 30px;
+    }
+    footer p{
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width:1841px) and (max-width:2040px){
+    .section1{
+        left: 20%;
+    }
+    .section1 img{
+        height: 280px;
+    }
+    .section1Text{
+        left:80% ;
+    }
+    .section1Text img {
+        height: 300px;
+    }
+    .logo{
+        top: 70px;
+        left: 12%;
+    }
+    .logo p {
+        font-size: 2.8rem;
+    }
+    .icon {
+        padding: 20px 10px ;
+        left: 5%;
+    }
+    .icon a{
+        font-size: 25px;
+    }
+
+    .notification h3 {
+        font-size: 2.3rem;
+    }
+    .notificationInput {
+        width: 400px;
+    }
+    .notificationInput p{
+        font-size: 30px;
+    }
+
+    footer{
+        padding: 30px;
+    }
+    footer p{
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width:2041px) and (max-width:2560px){
+    .section1{
+        left: 20%;
+    }
+    .section1 img{
+        height: 310px;
+    }
+    .section1Text{
+        left:76% ;
+    }
+    .section1Text img {
+        height: 330px;
+    }
+    .logo{
+        top: 75px;
+        left: 14%;
+    }
+    .logo p {
+        font-size: 3.3rem;
+    }
+    .icon {
+        padding: 20px 10px ;
+        left: 6%;
+    }
+    .icon a{
+        font-size: 29px;
+    }
+
+    .notification h3 {
+        font-size: 2.5rem;
+    }
+    .notificationInput {
+        width: 430px;
+    }
+    .notificationInput p{
+        font-size: 30px;
+    }
+
+    footer{
+        padding: 30px;
+    }
+    footer p{
+        font-size: 22px;
+    }
+}
+
+
+
